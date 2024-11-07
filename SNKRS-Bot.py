@@ -15,29 +15,29 @@ Stop = 0 #STEP 1  -   MAKE THIS THE NUMBER ZERO 0
 
 print ('You should have a NikeSNKRS Account already set up with your card information saved on their website...')
 print ('Below you will be asked personal information specifically for the checkout page on NikeSNKRS website.')
-email = input('Enter your Login Email for NikeSNKRS: ')
+email = input('samscarangella@Gmail.com')
 print (email)
-password = input('Enter your Login Password for NikeSNKRS: ')
+password = input('Sammyaa123!')
 print (password)
-TheCVV = input('Enter your CVV for the Card saved on your NikeSNKRS account: ')
+TheCVV = input('955')
 print (TheCVV)
 print ('Go Here: https://www.nike.com/launch?s=upcoming')
 print ('Click on the upcoming shoe/sneaker you wish to purchase, copy the link and post it below.')
-DaLink = input('Whats the link of the upcoming sneaker you wish to buy? Paste it Here: ')
+DaLink = inputhttps://www.nike.com/launch/t/dunk-high-wu-tang-clan')
 print (DaLink)
 print ('')
 print ('This bot has a Schedule feature. Below you will be asked at which hour, minute and second of the day you would like the bot to start. This bot uses military time, 6:00PM = 18:00:00, and 10:00AM = 10:00:00. Be as specific as you want.')
-Hour = int(input('Which hour of the day would you like this bot to start: '))
+Hour = int(input('10'))
 print (Hour)
-Min = int(input('Which minute of the hour would you like this bot to start: '))
+Min = int(input('0'))
 print (Min)
-Sec = int(input('Which second of the minute would you like this bot to start: '))
+Sec = int(input(0'))
 print (Sec)
 
 AddProxy = input('Do you have a Proxy: ')
 if AddProxy == 'yes' or AddProxy == 'Yes':
     print ('Your proxy should look like this: 109.98.36.23:38474 - Basically enter the IP:PORT or HOST:PORT')
-    PROXY = input('Enter your Proxy Here: ') # IP:PORT or HOST:PORT
+    PROXY = input('177.243.58.181:3128') # IP:PORT or HOST:PORT
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--proxy-server=%s' % PROXY)
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
@@ -50,11 +50,11 @@ print ('Remember to Move the Mouse Around when this bot activates.') #STEP 3
 
 #-------------------------Time-------------------------
 def Schedule(hour1, min2, sec3):
-    hour1 = int(hour1)
-    min2 = int(min2)
-    sec3 = int(sec3)
+    hour1 = int(10)
+    min2 = int(0)
+    sec3 = int(0)
     today = datetime.datetime.now()
-    Activate = (datetime.datetime(today.year, today.month, today.day, hour1, min2, sec3) - today).seconds     #STEP 3 CHOOSE THE TIME YOU WANT IT TO CONTINUE AT AFTER LAUNCHING THE BROWSER
+    Activate = (datetime.datetime(today.2024, today.11, today.9, hour1, min2, sec3) - today).seconds     #STEP 3 CHOOSE THE TIME YOU WANT IT TO CONTINUE AT AFTER LAUNCHING THE BROWSER
 #Uses Military Time 23, 25, 0 = 11:25:00PM                                                       #STEP 4 MAKE SURE YOUR NIKE CART IS COMPLETELY EMPTY
     print('Waiting for ' + str(datetime.timedelta(seconds=Activate)))
     time.sleep(Activate)
@@ -79,9 +79,9 @@ driver.get(DaLink)   #THIS WAS CORRECT
 #Get this link from the Nike SNKRS Website, under upcoming.
 #Find the sneaker you plan to buy on release day and click on it.
 #Copt that link and post it here
+https://www.nike.com/launch/t/dunk-high-wu-tang-clan
 
-
-LowestSize = "//li[@data-qa='size-available']"
+LowestSize =11 "//li[@data-qa='size-available']"
 driver.find_element_by_xpath(LowestSize).click()
 print ('Clicked on Sneaker Size. Move the mouse around so it DOESNT get stuck')
 #Will choose the first size avaliable
@@ -118,7 +118,7 @@ frame = driver.find_element_by_xpath("//iframe[@title='creditCardIframeForm']")
 driver.switch_to_frame(frame)
 #Switches inside the frame
 
-CVV = "//input[@data-shortname='cvv']"
+CVV =955 "//input[@data-shortname='cvv']"
 driver.find_element_by_xpath(CVV).send_keys(TheCVV)
 print ('Entered CVV')
 
